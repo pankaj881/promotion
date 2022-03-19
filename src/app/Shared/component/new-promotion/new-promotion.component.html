@@ -1,0 +1,20 @@
+<div class="card margin-x-auto" *ngIf="data">
+  <div  class="margin-20" *ngFor="let promo of data">
+    <mat-card>
+      <img
+        mat-card-image
+        [src]="promo.heroImageUrl"
+        alt="heroImageUrl">
+      <mat-card-content>
+        <h2> {{promo.name}} </h2>
+        <p> {{promo.description}} </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <div>
+          <button mat-stroked-button>Terms & Condition</button>
+          <button mat-raised-button>Join Now</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

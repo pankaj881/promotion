@@ -1,0 +1,12 @@
+<mat-tab-group mat-align-tabs="center" backgroundColor="primary">
+  <mat-tab label="All Promotion">
+    <app-promotion
+      [data]="allPromotion"
+    ></app-promotion>
+  </mat-tab>
+  <mat-tab label="New Customer Promotion">
+    <app-new-promotion
+      [data]="newCustomer"
+    ></app-new-promotion>
+  </mat-tab>
+</mat-tab-group>

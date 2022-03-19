@@ -1,0 +1,19 @@
+<div
+  cdkDropList
+  class="card margin-x-auto"
+  (cdkDropListDropped)="drop($event)"
+  *ngIf="data"
+  >
+  <div
+    class="margin-20"
+    *ngFor="let promo of data"
+    cdkDrag
+    >
+    <mat-card>
+      <mat-card-content>
+        <h2> {{promo.name}} </h2>
+        <p> {{promo.description}} </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
